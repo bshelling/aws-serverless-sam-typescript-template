@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sam build",
+    "sync": "sam sync",
+    "deploy": "sam deploy --guided",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.218.0",
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "@types/dynamodb": "^1.3.2",
+    "@types/node": "^18.11.9",
+    "esbuild": "^0.15.16",
+    "typescript": "^4.9.3"
+  }
+}
